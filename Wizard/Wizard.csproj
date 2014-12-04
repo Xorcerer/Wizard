@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BDC51C7-2D55-4384-B786-CE6DE5ED628D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Camp.Wizard</RootNamespace>
+    <AssemblyName>Camp.Wizard</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Facilities.Logging">
+      <HintPath>..\packages\Castle.LoggingFacility.3.3.0\lib\net45\Castle.Facilities.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Services.Logging.Log4netIntegration">
+      <HintPath>..\packages\Castle.Core-log4net.3.3.0\lib\net45\Castle.Services.Logging.Log4netIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Couchbase">
+      <HintPath>..\packages\CouchbaseNetClient.1.3.10\lib\net40\Couchbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Enyim.Caching">
+      <HintPath>..\packages\CouchbaseNetClient.1.3.10\lib\net40\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock">
+      <HintPath>..\packages\Hammock.1.2.9\lib\4.0\Hammock.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile">
+      <HintPath>..\packages\Hammock.1.2.9\lib\4.0\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules">
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite">
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf">
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.AspNet">
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\Microsoft.Scripting.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\IronPython.2.7.4\lib\Net45\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\Libs\protobuf-net.2.0.0.640\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Network\Client\ListenerState.cs" />
+    <Compile Include="Database\CouchBaseDb.cs" />
+    <Compile Include="Database\IDb.cs" />
+    <Compile Include="Database\MemoryDb.cs" />
+    <Compile Include="Messaging\ClientEventHandlers\QueueClientEventHandler.cs" />
+    <Compile Include="Messaging\ComponentLifeCycleManagement\ForgetableLifecycledComponentsReleasePolicy.cs" />
+    <Compile Include="Messaging\ComponentLifeCycleManagement\InstantiateAndForgetIt.cs" />
+    <Compile Include="Demos\ClientEventHandlers\DataflowBlockClientEventHandler.cs" />
+    <Compile Include="Demos\ClientEventHandlers\EchoServerClientEventHandler.cs" />
+    <Compile Include="Demos\ClientEventHandlers\SingleThreadLogicServerClientEventHandler.cs" />
+    <Compile Include="Demos\Installers\EchoServerInstaller.cs" />
+    <Compile Include="Demos\Installers\SingleThreadLogicServerInstaller.cs" />
+    <Compile Include="Messaging\IMessageAsyncHandler.cs" />
+    <Compile Include="Installers\DefaultInstaller.cs" />
+    <Compile Include="Messaging\IService.cs" />
+    <Compile Include="Messaging\MessageProcessService.cs" />
+    <Compile Include="MessageSerializers\LengthPrefixStringSerializer.cs" />
+    <Compile Include="MessageSerializers\LengthPrefixMessageSerializerBase.cs" />
+    <Compile Include="MessageSerializers\PlainStringSerializer.cs" />
+    <Compile Include="Network\Extensions\IClientExtensions.cs" />
+    <Compile Include="Network\Exceptions\BufferOverflowException.cs" />
+    <Compile Include="MessageSerializers\IMessageSerializer.cs" />
+    <Compile Include="Network\Client\ClientListener.cs" />
+    <Compile Include="Network\Client\Client.cs" />
+    <Compile Include="Network\Client\IClient.cs" />
+    <Compile Include="Network\Client\IClientEventHandler.cs" />
+    <Compile Include="Network\Client\IClientEventHandlerFactory.cs" />
+    <Compile Include="Network\Client\IClientFactory.cs" />
+    <Compile Include="MessageSerializers\ProtobufMessageSerializer.cs" />
+    <Compile Include="Utilities\Attributes\Attribute.cs" />
+    <Compile Include="Utilities\Attributes\AttributeContainer.cs" />
+    <Compile Include="Utilities\Attributes\IAttribute.cs" />
+    <Compile Include="Utilities\Attributes\IAttributeContainer.cs" />
+    <Compile Include="Utilities\Attributes\NullAttribute.cs" />
+    <Compile Include="Utilities\Authorization\IAuthorizer.cs" />
+    <Compile Include="Utilities\Authorization\Sha1Authorizer.cs" />
+    <Compile Include="Utilities\CallTraceInterceptor.cs" />
+    <Compile Include="Utilities\Components\ComponentBase.cs" />
+    <Compile Include="Utilities\Components\ComponentContainer.cs" />
+    <Compile Include="Utilities\Components\IComponent.cs" />
+    <Compile Include="Utilities\Components\IComponentContainer.cs" />
+    <Compile Include="Utilities\GetLine.cs" />
+    <Compile Include="Utilities\LogicException.cs" />
+    <Compile Include="Utilities\PythonHelper.cs" />
+    <Compile Include="Utilities\RandomHelper.cs" />
+    <Compile Include="Utilities\TaskHelper.cs" />
+    <Compile Include="Utilities\TypeDict.cs" />
+    <Compile Include="Utilities\Updatable.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+</Project>

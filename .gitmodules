@@ -1,0 +1,3 @@
+[submodule "Boar"]
+	path = Boar
+	url = git@github.com:Xorcerer/Boar.git
